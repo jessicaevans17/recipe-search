@@ -1,6 +1,7 @@
 import React from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faUtensils } from "@fortawesome/free-solid-svg-icons"
+import { Link } from "react-router-dom"
 
 const NavBar = () => {
   const element = <FontAwesomeIcon icon={faUtensils} />
@@ -8,7 +9,9 @@ const NavBar = () => {
     <>
       <nav>
         <header>
-          <h1>What's for Dinner?</h1>
+          <h1>
+            <Link to={"/"}>What's for Dinner? </Link>
+          </h1>
         </header>
         <section className="search-section">
           <input
